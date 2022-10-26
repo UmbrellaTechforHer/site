@@ -20,6 +20,7 @@ header{
     justify-content: space-between;
     
     
+    
 }
 
 header img{
@@ -58,15 +59,22 @@ header img{
     width: 41px;
     vertical-align:middle;
     display:table-cell;
-    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #menu :hover{
     color:#B2B50A;
 }
-#login button{
+#login button {
     background-color: #532DA6;
     color: white;
+    height: 34px;
+    width: 113px;
+    border-radius: 6px;
+    justify-items: center;
+    margin-right: 10px;
+    margin-top: 5px;
+    border:none!important;
 }
 .encontros img{
    height: 376px; 
