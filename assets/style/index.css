@@ -11,11 +11,13 @@ header{
     display: flex;
 
     width: 100%;
+    height: 50px;
     position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
+    /* top: 0; */
+    /* left: 0; */
+    /* z-index: 100; */
     background-color: #DEAEF2;
+    justify-content: space-between;
     
     
 }
@@ -52,7 +54,11 @@ header img{
 #menu a{
     text-decoration:none;
     color: #000000;
-    margin-left:10px;
+    height: 39px;
+    width: 41px;
+    vertical-align:middle;
+    display:table-cell;
+    padding-left: 10px;
 }
 
 #menu :hover{
