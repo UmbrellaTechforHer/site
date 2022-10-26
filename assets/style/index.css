@@ -1,0 +1,66 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: white;
+}
+header{
+    
+    margin-bottom: 2rem;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    position: static;
+    justify-content: space-between;
+   
+}
+header img{
+  height: 39px;
+  width: 41px;
+  
+  border-radius: 50px;
+}
+#nome{
+  font: 700 1.4rem 'Poppins', sans-serif;
+  font-size: 32px;
+  line-height: 48px;
+  color: #B113B3;
+  
+}
+
+#nome span{
+  font: 700 1.4rem 'Inter', sans-serif;
+  font-size: 23px;
+  color: #F7EE9A;
+  -webkit-text-stroke-color: #740899;
+  -webkit-text-stroke-width: 1px;
+}
+#menu a{
+    text-decoration:none;
+    color: #000000;
+    height: 39px;
+    width: 41px;
+    vertical-align:middle;
+    display:table-cell;
+    padding-right: 10px;
+}
+
+#menu :hover{
+    color:#B2B50A;
+}
+#login button {
+    background-color: #532DA6;
+    color: white;
+    height: 34px;
+    width: 113px;
+    border-radius: 6px;
+    justify-items: center;
+    margin-right: 10px;
+    margin-top: 5px;
+    border:none!important;
+}
+.encontros img{
+   height: 376px; 
+   
+}  
