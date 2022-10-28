@@ -1,0 +1,28 @@
+body{
+    text-align: center;
+    
+
+}
+#nome, #email, #assunto{
+    background-color: #deaef2;
+    border: #deaef2;
+    border-radius: 10px;
+    height: 30px;
+    width: 400px;
+    
+}
+#mensagem{
+    background-color: #deaef2;
+    border: #deaef2;
+    border-radius: 10px;
+    height: 250px;
+    width: 400px;
+    
+}
+input,textarea{
+    outline:none;
+}
+textarea{
+    font-family: sans-serif;
+    font-size: 14px;
+}
