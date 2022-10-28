@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="icon" type="image/jpg" href="./assets/img/umbrella-icon.jpg" />
     <title>Umbrella Tech</title>
 
@@ -20,25 +21,30 @@
   </head>
   <body>
     <header>
-      <div id="icon">
-        <img src="./assets/img/umbrella-icon.jpg" alt="icon umbrella" />
-        <a id="nome">Umbrella<span>Tech</span></a>
-      </div>
-      <div id="menu">
-        <nav>
-          <a href="#">Inicio</a>
-          <a href="#">Sobre</a>
-          <a href="#">Biblioteca</a>
-          <a href="#">Depoimentos</a>
-          <a href="#">Contato</a>
-        </nav>
-      </div>
-      <div id="login">
-        <a href="#">
-          <button>Login</button>
-        </a>
-      </div>
+      <nav class="container">
+        <div id="icon">
+          <img src="./assets/img/umbrella-icon.jpg" alt="icon umbrella" />
+          <a class="logo">Umbrella<span> tech</span></a>
+        </div>
+        <!-- menu -->
+        <div id="menu">
+          <ul class="grid">
+            <li><a class="title" href="#">Inicio</a></li>
+            <li><a class="title" href="#">Sobre</a></li>
+            <li><a class="title" href="#">Biblioteca</a></li>
+            <li><a class="title" href="#">Depoimentos</a></li>
+            <li><a class="title" href="#">Contato</a></li>
+          </ul>
+        </div>
+        <!-- button -->
+        <div id="login">
+          <a href="#">
+            <button>Login</button>
+          </a>
+        </div>
+      </nav>
     </header>
+
     <section class="principal">
       <div class="facaParte">
         <h2>Tech for Her</h2>
