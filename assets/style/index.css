@@ -126,9 +126,56 @@ nav ul li a.active::after{
     border:none!important;
 }
 
+.principal{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 136px;
+}
+.facaParte{
+  margin-top: 35px;
+}
+.facaParte h1{
+  font-size: 64px;
+  font: 700 1.875rem 'Inter', sans-serif;
+  font-size: 60px;
+  margin-bottom: 15px;
+  color: #333333;
+}
+.facaParte p{
+  color:#767676;
+  font: 400 1.4rem 'Inter', sans-serif;
+  font-size: 16px;
+}
+.buttonFaca{
+  width: 156px;
+  height: 40px;
+  background-color: #532DA6;
+  border-color: #532DA6;
+  border-radius: 4px;
+  color: white;
+}
+.buttonAgenda{
+  height: 40px;
+  width: 200px;
+  background-color: none;
+  border-color: #532DA6;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #532DA6;
+}
+.facaParte button{
+  margin-top: 50px;
+}
+.encontros{
+  float: left;
+}
 
 .encontros img{
-   height: 376px; 
+  height: 376px; 
+  filter: drop-shadow(15px 15px 12px #532DA6);
+  border-radius: 15px;
    
 }  
+
 
