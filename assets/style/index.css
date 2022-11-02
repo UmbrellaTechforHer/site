@@ -160,7 +160,7 @@ nav ul li a.active::after{
 .buttonAgenda{
   height: 40px;
   width: 200px;
-  background-color: none;
+  background-color: white;
   border-color: #532DA6;
   border-radius: 4px;
   text-decoration: none;
@@ -239,4 +239,75 @@ nav ul li a.active::after{
 .vejaTodos{
   text-align: center;
   margin-top: 40px;
+}
+
+.curved img{
+  width: 100%;
+}
+
+.biblioteca{
+  padding-bottom: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 100px;
+  
+}
+.biblioteca h2{
+  font: 700 1.4rem 'Poppins', sans-serif;
+  color: #292D33;
+  padding-bottom: 27px;
+}
+
+.biblioteca p{
+  padding-bottom:  27px;
+  color: #333333;
+}
+
+.biblioteca button{
+  width: 129px ;
+  height: 34px;
+  background-color: white;
+  border-color: 1px solid #93850D;
+  border-radius: 4px;
+  color: #93850D;
+}
+
+.cardBiblioteca{
+ display: flex;
+
+}
+
+.coluna1{
+  margin-right: 25px;
+  margin-top: -30px;
+}
+
+.card{
+  width: 255px;
+  height: 248px;
+  
+  background: rgba(251, 247, 204, 0.88);
+  opacity: 0.9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  margin-bottom: 25px;
+
+  padding-left: 20px;
+  padding-top: 30px;
+  
+ 
+}
+.card h3{
+  color: #292D33;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.card p{
+  color: #494949;
+}
+.card a{
+  margin-top: 10px;
+  color: #93850D;
+  text-decoration: underline;
 }
