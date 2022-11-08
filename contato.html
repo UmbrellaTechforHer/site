@@ -1,35 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/jpg" href="./assets/img/umbrella-icon.jpg" />
-    <link rel="stylesheet" href="./assets/style/contato.css" />
+
     <title>Contato</title>
+
+
+    <link rel="stylesheet" href="./assets/style/contato.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500&display=swap"
+        rel="stylesheet" />
 </head>
+
 <body>
-    <header>
+    <header id="header">
 
     </header>
-
-    <h1> Fale conosco </h1>
-    <form>
-        <label for="nome"> Nome Completo:</label> <br>
-        <input type="text" name="nome" id="nome" value="Nome Completo"><br>
-        <label for="email">E-mail:</label><br>
-        <input type="email" name="email" id="email" value="Coloque o seu melhor e-mail"><br>
-        <label for="assunto">Assunto:</label><br>
-        <input type="texto" name="assunto" id="assunto" value="Assunto"><br>
-        <label for="mensagem">Mensagem:</label><br>
-        <textarea name="mensagem" id="mensagem" > Coloque a sua mensagem aqui!</textarea><br>
-        <input type="checkbox" name="seguranca" >
-        <label for="seuranca">Aceita recerber informações e noticias da Umbrella Tech</label><br> <br>
+    <section id="conteiner">
+        <h1> Fale conosco </h1>
+        <div class="formulario">
+            <div>
+                <img src="./assets/img/group.png" alt="Grupo de mulheres" >
+            </div>
+            <div>
+                <form>
+                    <label for="nome"> Nome Completo:</label> <br>
+                    <input type="text" name="nome" id="nome" value="Nome Completo"><br>
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" name="email" id="email" value="Coloque o seu melhor e-mail"><br>
+                    <label for="assunto">Assunto:</label><br>
+                    <input type="texto" name="assunto" id="assunto" value="Assunto"><br>
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea name="mensagem" id="mensagem"> Coloque a sua mensagem aqui!</textarea><br>
+                    <input type="checkbox" name="seguranca">
+                    <label for="seuranca">Aceita recerber informações e noticias da Umbrella Tech</label><br> <br>
         
-        <input type="submit" value="Enviar">
-    </form>
-    
-    
+                    <input type="submit" value="Enviar" id="enviar">
+                </form>
+            </div>
+        </div>
+        
+    </section>
 
+
+
+    <footer id="footer"></footer>
+
+    <script type="text/javascript">
+        carregaDocumento("header.html", "#header");
+        carregaDocumento("footer.html", "#footer");
+
+        function carregaDocumento(arquivo, target) {
+            var el = document.querySelector(target);
+
+            //Se o elemento não existir então não requisita
+            if (!el) return;
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", arquivo, true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status >= 200 && xhr.status < 300) {
+                    el.innerHTML = xhr.responseText;
+                }
+            };
+
+            xhr.send(null);
+        }
+    </script>
 </body>
+
 </html>

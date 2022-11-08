@@ -1,0 +1,120 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  
+  ul{
+    list-style: none;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  body{
+      background-color: white;
+      min-width: 100vh;
+  }
+  
+  
+  /*--- HEADER --- */
+  .container{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .grid{
+    display: flex;
+    gap: 1rem;
+  }
+  .title{
+    font: 200 0.8rem 'Poppins', sans-serif;
+    color: #000000;
+    -webkit-font-smoothing: antialiased;
+  }
+  header{
+    margin-bottom: 2rem;
+    display: flex;
+    width: 100%;
+    position:relative;
+    justify-content: space-between;
+    height: 87px;  
+  }
+  #icon-img{
+    height: 39px;
+    width: 41px;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 50px;
+  }
+  
+  
+  
+  /*---- LOGO ----*/
+  .logo{
+    font: 700 1.4rem 'Poppins', sans-serif;
+    font-size: 25px;
+    line-height: 36px;
+    color: #740899;
+  }
+  
+  .logo span{
+    font: 700 1.4rem 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #F7EE9A;
+    -webkit-text-stroke: 1px #740899;
+  }
+  
+  
+  
+  /*---- NAVEGATION ----*/
+  nav{
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  nav ul li{
+    text-align: center;
+  }
+  nav ul li a{
+    transition: color 0.2s;
+    position: relative;
+  }
+  nav ul li a:hover,
+  nav ul li a.active{
+    color: #F2E74B;
+  }
+  nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #F2E74B;
+  
+    position: absolute;
+    left: 0;
+    bottom: -1.5rem;
+  
+    transition: width 0.2s;
+  }
+  nav ul li a:hover::after,
+  nav ul li a.active::after{
+    width: 100%;
+  }
+  
+  
+  /* ---- BUTTON ----*/
+  #login button {
+      background-color: #532DA6;
+      color: white;
+      height: 34px;
+      width: 113px;
+      border-radius: 6px;
+      justify-items: center;
+      margin-right: 10px;
+      margin-top: 5px;
+      border:none!important;
+      text-decoration: none;
+  
+  }
