@@ -115,6 +115,8 @@ nav ul li a.active::after{
     margin-right: 10px;
     margin-top: 5px;
     border:none!important;
+    text-decoration: none;
+
 }
 .principal{
   display: flex;
@@ -145,6 +147,8 @@ nav ul li a.active::after{
   border-color: #532DA6;
   border-radius: 4px;
   color: white;
+  border: none;
+
 }
 .buttonAgenda{
   height: 40px;
@@ -221,6 +225,8 @@ nav ul li a.active::after{
   border-radius: 4px;
   border-color: #532DA6;
   color: white;
+  text-decoration: none;
+  border: none;
 }
 .vejaTodos{
   text-align: center;
@@ -256,6 +262,8 @@ nav ul li a.active::after{
   border-color: 1px solid #93850D;
   border-radius: 4px;
   color: #93850D;
+  text-decoration: none;
+  
 }
 .cardBiblioteca{
  display: flex;
@@ -382,6 +390,7 @@ nav ul li a.active::after{
   border-radius: 4px;
   text-decoration: none;
   color: white;
+  border: none;
   
 }
 .participarComunidade{
@@ -431,7 +440,7 @@ footer{
 }
 .newsLetter h3{
   font: 700 1.4rem 'Poppins', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
 }
 .newsLetter img{
   margin-top: 5px;
@@ -449,7 +458,13 @@ footer{
   background-color: #DDDDDD;
   margin-top: 10px;
   margin-bottom: 10px;
+  padding-left: 20px;
+  color: #999999;
+  font-family: 'Inter';
+  font-style: normal;
+font-weight: 400;
 }
+
 .rodape button{
   background-color: #532DA6;
   color: white;
@@ -469,7 +484,8 @@ footer{
   margin-bottom: 20px;
   margin-top: 20px;
   margin-left: 3px;
-  font-size: 16px;
+  font-size: 23px;
+  font: 700 0.8rem 'Poppins', sans-serif;
 }
 .menuFooter a{
   text-decoration: none;
@@ -482,8 +498,15 @@ footer{
 }
 .redes{
   justify-content: space-between;
-}
 
+}
+.redes img{
+  margin-top:18px;
+  margin-right: 40px;
+  margin-left: 3px;
+  height: 18px;
+  width: 18px;
+}
 .politicas{  
 display: flex;
   justify-content: space-between;
@@ -501,4 +524,5 @@ display: flex;
 .onde{
   margin-top: 15px;
   font-size: 16px;
+  font: 0.8rem 'Poppins', sans-serif;
 }
