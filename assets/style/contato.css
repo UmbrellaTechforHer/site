@@ -1,19 +1,46 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
 body{
+    background-color: white;
+    min-width: 100vh;
+   ;
+}
+
+#conteiner h1{
+    font: 400 1.875rem 'Inter', sans-serif;
     text-align: center;
-    
+    margin-bottom: 78px;
+    margin-top: 20px;
 
 }
+
+.formulario{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 40px;
+    margin-right: 50px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+}
+.formulario img{
+    height: 350px;
+}
+
 #nome, #email, #assunto{
-    background-color: #deaef2;
-    border: #deaef2;
+    background-color: #DDDDDD;
+    border: #DDDDDD;
     border-radius: 10px;
     height: 30px;
     width: 400px;
     
 }
 #mensagem{
-    background-color: #deaef2;
-    border: #deaef2;
+    background-color: #DDDDDD;
+    border: #DDDDDD;
     border-radius: 10px;
     height: 250px;
     width: 400px;
@@ -21,8 +48,24 @@ body{
 }
 input,textarea{
     outline:none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    color: #999999;
+    padding-left: 10px;
 }
 textarea{
-    font-family: sans-serif;
     font-size: 14px;
+}
+form{
+    margin-bottom: 200px;
+}
+#enviar{
+    background-color: #532DA6;
+    width: 198px;
+    height: 41px;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
 }
